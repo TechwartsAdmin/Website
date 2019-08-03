@@ -61,16 +61,22 @@ body, html {
 #arvr {
     max-width: 100%;
     width: 50%;
+    position: relative;
+    margin-left: 25%;
 }
 
 #code {
     max-width: 100%;
     width: 48%;
+    position: relative;
+    margin-left: 25%;
 
 }
 #ai {
     max-width: 100%;
     width: 50%;
+    position: relative;
+    margin-left: 25%;
     
 
 }
@@ -78,6 +84,8 @@ body, html {
 #android {
     max-width: 100%;
     width: 50%;
+    position: relative;
+    margin-left: 25%;
 }
 
 * {
@@ -91,8 +99,8 @@ body, html {
   /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
-    /* margin-top: 20px; */
-    height: 90px;
+    /* margin-top: 15%; */
+    height: auto;
   }
   
   /* Hide the images by default */
@@ -117,7 +125,7 @@ body, html {
     margin-right: 15px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15%;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
@@ -161,15 +169,23 @@ body, html {
   }
 
   .registration-div {
-      top: 10px;
+    /* border: 1px solid white; */
+    position: fixed;
+    bottom: 0px;
+    height: 55px;
+    background: #212F3D;
+    z-index: 1;;
+    /* margin-left: 2%; */
+    width: 100%;
   }
 
   #facebook {
-    width: 30px;
+    width: 50px;
     position: relative;
-    bottom: 55px;
-    left: 50%;
-    margin-left: -40px;
+    /* bottom: 55px; */
+    left: 0px;
+    top: 5px;
+    /* margin-left: -40px; */
   }
 
   #insta {
@@ -180,23 +196,129 @@ body, html {
     margin-left: 10px;
   }
 
+  .gallery {
+    background: #2E4053 ;
+  }
+
+  /* Floating button */
+
+  .label-container{
+    position:fixed;
+    bottom:48px;
+    right:105px;
+    display:table;
+    visibility: hidden;
+  }
+  
+  .label-text{
+    color:#FFF;
+    background:rgba(51,51,51,0.5);
+    display:table-cell;
+    vertical-align:middle;
+    padding:10px;
+    border-radius:3px;
+  }
+  
+  .label-arrow{
+    display:table-cell;
+    vertical-align:middle;
+    color:#333;
+    opacity:0.5;
+  }
+  
+  .float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:70px;
+    right:10px;
+    background-color:#212F3D;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    z-index:1000;
+    animation: bot-to-top 2s ease-out;
+  }
+  
+  ul{
+    position:fixed;
+    right:10px;
+    padding-bottom:20px;
+    bottom:90px;
+    z-index:3;
+  }
+  
+  ul li{
+    list-style:none;
+    margin-bottom:10px;
+  }
+  
+  ul li a{
+    background-color:#212F3D;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    width:60px;
+    height:60px;
+    display:block;
+  }
+  
+  ul:active{
+    visibility:visible!important;
+    opacity:1!important;
+  }
+  
+  
+  .my-float{
+    font-size:24px;
+    margin-top:18px;
+  }
+  
+  a#menu-share + ul{
+    visibility: hidden;
+  }
+  
+  a#menu-share:hover + ul{
+    visibility: visible;
+    animation: scale-in 0.5s;
+  }
+  
+  a#menu-share i{
+    animation: rotate-in 0.5s;
+  }
+  
+  a#menu-share:hover > i{
+    animation: rotate-out 0.5s;
+  }
+  
+  @keyframes scale-in {
+      from {transform: scale(0);opacity: 0;}
+      to {transform: scale(1);opacity: 1;}
+  }
+  
+  @keyframes rotate-in {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+  }
+  
+  @keyframes rotate-out {
+      from {transform: rotate(360deg);}
+      to {transform: rotate(0deg);}
+  }
+
 
 @media only screen and (min-width: 768px) {
     body, html {
         margin: 0 auto;
         border: 0;
-        /* background: url("/home/amit/Documents/inkscape/potifoweb.svg"); */
         background-color: #212F3D;
         min-width: 600px;
-        overflow: hidden;
     }
 
     #facebook {
-      width: 30px;
-      position: fixed;
-      bottom: 5px;
-      left: 50%;
-      margin-left: -40px;
+      width: 50px;
     }
 
     #insta {
@@ -208,24 +330,27 @@ body, html {
     }
     #arvr {
         max-width: 100%;
-        width: 100%;
+        width: 70%;
+        margin-left: 15%;
     }
 
     #code {
         max-width: 100%;
-        width: 100%;
+        width: 70%;
+        margin-left: 15%;
 
     }
     #ai {
         max-width: 100%;
-        width: 100%;
-        
+        width: 70%;
+        margin-left: 15%;
 
     }
 
     #android {
         max-width: 100%;
-        width: 100%;
+        width: 70%;
+        margin-left: 15%;
     }
 
     #register {
@@ -235,7 +360,7 @@ body, html {
       /* margin-right: 50%; */
       border: none;
       left: 50%;
-      bottom: 50px;
+      bottom: 10px;
       position: fixed;
       margin-left: -150px;
     }
@@ -247,10 +372,15 @@ body, html {
       /* margin-right: 50%; */
       border: none;
       left: 50%;
-      bottom: 50px;
+      bottom: 10px;
       position: fixed;
       margin-left: 10px;
   }
+    .user-card-footer {
+      position: absolute; 
+      bottom: 5px;
+      right: 15px;
+    }
     button {
         text-decoration: none;
         border: none;
@@ -268,6 +398,19 @@ body, html {
         margin-right: 10px;
     }
 
+
+    .registration-div {
+      /* border: 1px solid white; */
+      position: fixed;
+      bottom: 0px;
+      height: 55px;
+      background: #212F3D;
+      z-index: 1;;
+      /* margin-left: 2%; */
+      width: 100%;
+    }
+
+
     button:hover {
         background-color: white;
         background: #00748cff;
@@ -279,7 +422,7 @@ body, html {
     }
 
     #user-card:hover {
-        box-shadow: 1px 1px 20px 1px rgb(77, 97, 129);
+        box-shadow: 1px 1px 15% 1px rgb(77, 97, 129);
         transition: 0.3s;
     }
 
@@ -289,7 +432,8 @@ body, html {
 
 
     #user-card {
-        max-width: 15%;  
+        min-width: 20%;
+        max-width: 50%;  
         margin-top: 25px;
         /* margin: 10px 10px; */
     }
@@ -329,7 +473,7 @@ body, html {
       /* Position the image container (needed to position the left and right arrows) */
       .container {
         position: relative;
-        /* margin-top: 20px; */
+        /* margin-top: 15%; */
         height: auto; 
       }
 
@@ -365,7 +509,7 @@ body, html {
         margin-right: 15px;
         color: white;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 15%;
         border-radius: 0 3px 3px 0;
         user-select: none;
         -webkit-user-select: none;
@@ -407,4 +551,63 @@ body, html {
       .demo:hover {
         opacity: 1;
       }
+
+      .user-code-body {
+        display: none;
+      }
+
+      .label-container{
+        position:fixed;
+        bottom:48px;
+        right:105px;
+        display:table;
+        visibility: hidden;
+        }
+
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#212F3D;
+	/* color:#FFF; */
+	border-radius:50px;
+	text-align:center;
+	/* box-shadow: 2px 2px 3px #999; */
+	z-index:4;
+	animation: bot-to-top 2s ease-out;
+}
+
+ul{
+	position:fixed;
+	right:40px;
+	padding-bottom:20px;
+	bottom:80px;
+	z-index:100;
+}
+
+ul li{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+ul li a{
+	background-color:#212F3D;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	/* box-shadow: 2px 2px 3px #999; */
+	width:60px;
+	height:60px;
+	display:block;
+}
+
+ul:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+
+
 }

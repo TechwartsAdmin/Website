@@ -1,0 +1,78 @@
+body, html {
+    margin: 0 auto;
+    border: 0;
+    /* background: url("/home/amit/Documents/inkscape/potifoweb.svg"); */
+    background-color: #212F3D;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#coder3 {
+    width: 60%;
+    display: absolute;
+    left: 50%;
+    margin-left: 21%;
+}
+
+
+.lovetocode {
+    display: absolute;
+    left: 50%;
+    margin-left: 7%;
+}
+
+p {
+    font-size: 100%;
+    display: absolute;
+    margin: 10px 10px;
+    margin-top: 40px;
+}
+
+#vision {
+    position: absolute;
+    left: 50%;
+    margin-left: -20%;
+    margin-top: -35px;
+
+}
+#user-card {
+    width: 21%;
+    max-width: 26%;
+    display: fixed;
+    margin: 10px 10px;
+}
+
+#coder, #idea {
+    width: 60%;
+    display: absolute;
+    left: 50%;
+    margin-left: 21%;
+}
+
+#idea {
+    width: 50%;
+}
+
+#coders{
+    display: absolute;
+    left: 50%;
+    margin-left: 10%;
+}
+
+#ideas {
+    width: 50%;
+    margin-left: 25%;
+}
+
+@media (min-width: 768px){
+    body, html {
+        margin: 0 auto;
+        border: 0;
+        /* background: url("/home/amit/Documents/inkscape/potifoweb.svg"); */
+        background-color: #212F3D;
+        overflow-x: hidden;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}

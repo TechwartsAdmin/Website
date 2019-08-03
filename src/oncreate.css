@@ -1,0 +1,7 @@
+body, html {
+    margin: 0 auto;
+    border: 0;
+    /* background: url("/home/amit/Documents/inkscape/potifoweb.svg"); */
+    background-color: #212F3D;
+    overflow-x: hidden;
+}
