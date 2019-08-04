@@ -100,7 +100,8 @@ body, html {
   .container {
     position: relative;
     /* margin-top: 15%; */
-    height: auto;
+    height: 150px;
+    overflow: hidden;
   }
   
   /* Hide the images by default */
@@ -474,7 +475,8 @@ body, html {
       .container {
         position: relative;
         /* margin-top: 15%; */
-        height: auto; 
+        height: 550px; 
+        overflow: hidden;
       }
 
       .gallery {
