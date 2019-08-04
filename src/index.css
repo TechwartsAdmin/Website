@@ -58,6 +58,9 @@ body, html {
     margin: 10px 10px;
 }
 
+.gmap {
+  margin: 0px 0px 10px 20px;
+}
 #arvr {
     max-width: 100%;
     width: 50%;
@@ -380,6 +383,10 @@ body, html {
       bottom: 10px;
       position: fixed;
       margin-left: 10px;
+  }
+
+  .gmap {
+    margin: 0px 0px 0px 0px;
   }
     .user-card-footer {
       position: absolute; 
